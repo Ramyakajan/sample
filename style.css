@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  header {
+    background-color:#3b88df;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+  }
+  h1{
+   line-height: 60%;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .medicine-section {
+    margin-bottom: 20px;
+  }
+  
+  .items label {
+    display: block;
+    margin: 5px 0;
+  }
+  
+  #order-summary {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  #order-summary th, #order-summary td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+
+  /*Actions Buttons Starts*/
+  .actions button {
+    background-color: #34a3d3;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.actions button:hover {
+    background-color: #004494;
+}
+ /*Actions Buttons End*/
+
+.medicine-section {
+  margin-bottom: 2rem; /* Space between sections */
+}
+
+.medicine-section h2 {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-template-rows: auto auto; /* 2 rows */
+  gap: 1rem; /* Space between grid items */
+}
+
+label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 1px 3px rgba(255, 255, 255, 0.1);
+}
+
+input[type="number"] {
+  width: 14rem;
+  margin-left: 1rem;
+  text-align: center;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medicine Order Page</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <h1>"Your Local Pharmacy, Always Here For You"</h1>
+    <h1>Your Health, Our Priority</h1>
+  </header>
+  <main>
+     <!-- Analgesics Row -->
+    <section class="medicine-section">
+      <h2>Analgesics</h2>
+      <div class="items" id="analgesics">
+        <label><input type="number" min="0" data-name="Paracetamol" data-price="10"> Paracetamol ($10)</label>
+        <label><input type="number" min="0" data-name="Acetaminophen" data-price="15"> Acetaminophen ($15)</label>
+        <label><input type="number" min="0" data-name="Codeine" data-price="15"> Codeine ($15)</label>
+        <label><input type="number" min="0" data-name="Fentanyl" data-price="15"> Fentanyl ($15)</label>
+        <label><input type="number" min="0" data-name="Methadone" data-price="15"> Methadone ($15)</label>
+        <label><input type="number" min="0" data-name="Oxycodone" data-price="15"> Oxycodone ($15)</label>
+      </div>
+    </section>
+
+     <!-- Antibiotics Row-->
+    <section class="medicine-section">
+      <h2>Antibiotics</h2>
+      <div class="items" id="antibiotics">
+        <label><input type="number" min="0" data-name="Amoxicillin" data-price="20"> Amoxicillin ($20)</label>
+        <label><input type="number" min="0" data-name="Penicillin" data-price="25"> Penicillin ($25)</label>
+        <label><input type="number" min="0" data-name="Cephalosporin" data-price="25"> Cephalosporin ($25)</label>
+        <label><input type="number" min="0" data-name="Tetracycline" data-price="25"> Tetracycline ($25)</label>
+        <label><input type="number" min="0" data-name="Macrolides" data-price="25"> Macrolides ($25)</label>
+        <label><input type="number" min="0" data-name="Fluoroquinolones" data-price="25"> Fluoroquinolones ($25)</label>
+      </div>
+    </section>
+
+     <!-- Antidepressants Row-->
+    <section class="medicine-section">
+        <h2>Antidepressants</h2>
+        <div class="items" id="Antidepressants">
+          <label><input type="number" min="0" data-name="Paracetamol" data-price="10"> Paracetamol ($10)</label>
+          <label><input type="number" min="0" data-name="Ibuprofen" data-price="15"> Ibuprofen ($15)</label>
+          <label><input type="number" min="0" data-name="Amitriptyline" data-price="10"> Amitriptyline ($10)</label>
+          <label><input type="number" min="0" data-name="Citalopram" data-price="15"> Citalopram ($15)</label>
+          <label><input type="number" min="0" data-name="Fluoxetine" data-price="10"> Fluoxetine ($10)</label>
+          <label><input type="number" min="0" data-name="Escitalopram" data-price="15"> Escitalopram ($15)</label>
+        </div>
+      </section>
+
+     <!-- Antihistamines Row -->
+      <section class="medicine-section">
+        <h2>Antihistamines</h2>
+        <div class="items" id="Antihistamines">
+          <label><input type="number" min="0" data-name="Loratadine" data-price="10"> Loratadine ($10)</label>
+          <label><input type="number" min="0" data-name="Cetirizine" data-price="15"> Cetirizine ($15)</label>
+          <label><input type="number" min="0" data-name="Diphenhydramine" data-price="10"> Diphenhydramine ($10)</label>
+          <label><input type="number" min="0" data-name="Clemastine" data-price="15"> Clemastine ($15)</label>
+          <label><input type="number" min="0" data-name="Hydroxyzine" data-price="10"> Hydroxyzine ($10)</label>
+          <label><input type="number" min="0" data-name="Azelastine" data-price="15"> Azelastine ($15)</label>
+        </div>
+      </section>
+
+       <!-- Antihypertensives Row -->
+      <section class="medicine-section">
+        <h2>Antihypertensives</h2>
+        <div class="items" id="Antihypertensives">
+          <label><input type="number" min="0" data-name="Amlodipine" data-price="10"> Amlodipine ($10)</label>
+          <label><input type="number" min="0" data-name="Nifedipine" data-price="15"> Nifedipine ($15)</label>
+          <label><input type="number" min="0" data-name="Nicardipine" data-price="10"> Nicardipine ($10)</label>
+          <label><input type="number" min="0" data-name="Verapamil" data-price="15"> Verapamil ($15)</label>
+          <label><input type="number" min="0" data-name="Captopril" data-price="10"> Captopril ($10)</label>
+          <label><input type="number" min="0" data-name="Benazepril" data-price="15"> Benazepril ($15)</label>
+        </div>
+      </section>
+
+        <!-- Add to order -->
+    <button id="add-items">Add to Order</button>
+    <table id="order-summary">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Quantity</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2">Total</td>
+          <td id="total-price">$0</td>
+        </tr>
+      </tfoot>
+    </table>
+    <div class="actions">
+      <button id="save-favourites">Add to Favourites</button>
+      <button id="apply-favourites">Apply Favourites</button>
+      <button id="buy-now">Buy Now</button>
+    </div>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>
